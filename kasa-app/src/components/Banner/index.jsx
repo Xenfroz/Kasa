@@ -1,10 +1,10 @@
-function Paysage(image,citation) {
+function Banner({image, citation}) {
     return (
       <div>
             <img src={image} alt='Paysage' className='paysage' />
-            <p>{citation}</p>
+            <h2>{citation}</h2>
       </div>
     )
   }
   
-  export default Paysage
+  export default Banner

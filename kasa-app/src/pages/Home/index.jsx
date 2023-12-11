@@ -1,12 +1,15 @@
-import image from '../../assets/paysage-mer.png'
-import Paysage from '../../components/Paysage'
+import paysageMer from '../../assets/paysage-mer.png'
+import Banner from '../../components/Banner'
+import LogementCards from '../../components/LogementCards'
 
 function Home() {
-    const citation = "Chez vous, partout et ailleurs"
-    return <div>
-        Page d'accueil 🏡
-    </div>
-    Paysage(image,citation)
+    const citationBanner = 'Chez vous, partout et ailleurs'
+    return (
+        <div>
+            <Banner image={paysageMer} citation={citationBanner}></Banner>
+            <LogementCards></LogementCards>
+        </div>
+        )
   }
   
   export default Home
