@@ -1,0 +1,36 @@
+.carousel-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 26em;
+    width: 100%;
+
+    .active-image {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 25px;
+    }
+
+    .previous {
+        position: absolute;
+        left: 11%;
+        z-index: 1;
+    }
+
+    .next {
+        position: absolute;
+        right: 11%;
+        z-index: 1;
+    }
+
+    .compteur {
+        position: absolute;
+        bottom: 22%;
+        z-index: 1;
+        margin: 0;
+        color: white;
+        font-weight: 500;
+        font-size: 18px;
+    }
+}

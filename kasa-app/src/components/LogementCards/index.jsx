@@ -1,15 +1,17 @@
 import { Link } from 'react-router-dom'
 import logements from '../../datas/logements.json'
+import './LogementCards.scss'
 
-export const LogementCards = () => {
+const LogementCards = () => {
   return (
-    <div>
+    <div className="card-container">
       {logements.map((logement) => {
-        const titreLien = logement.title.replace(/\s+/g, '-').toLowerCase();
         return (
-          <Link to={"/"+titreLien} key={logement.id}>
-            <div>{logement.title}</div>
-            <img src={logement.cover} alt={logement.description} />
+          <Link to={"/Logement/"+logement.id} key={logement.id} className="card-container__card">
+            <div className="card-content">
+              <img src={logement.cover} alt={logement.description}></img>
+              <p>{logement.title}</p>
+            </div>
           </Link>
         );
       })}

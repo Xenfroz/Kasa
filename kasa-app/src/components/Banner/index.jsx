@@ -1,10 +1,14 @@
-function Banner({image, citation}) {
-    return (
-      <div>
-            <img src={image} alt='Paysage' className='paysage' />
-            <h2>{citation}</h2>
+import './Banner.scss'
+
+function Banner({ image, citation }) {
+  return (
+    <div className="banner-container">
+      <img src={image} alt="Bannière" className="banner-image" />
+      <div className="banner-text">
+        <p>{citation}</p>
       </div>
-    )
-  }
+    </div>
+  );
+}
   
-  export default Banner
+export default Banner
