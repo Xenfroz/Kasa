@@ -16,12 +16,22 @@
         position: absolute;
         left: 11%;
         z-index: 1;
+        img {
+            @media (max-width: 767.98px) {
+                height: 3em;
+              }
+        }
     }
 
     .next {
         position: absolute;
         right: 11%;
         z-index: 1;
+        img {
+            @media (max-width: 767.98px) {
+                height: 3em;
+              }
+        }
     }
 
     .compteur {

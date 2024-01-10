@@ -19,9 +19,9 @@ function Carousel({imagesGalerie}) {
   return (
     <div className="carousel-wrapper">
       <div onClick={previousClick} className="previous">
-        <img key={imageActuelle} src={previousArrow} alt="Flèche vers la gauche" />
+        <img src={previousArrow} alt="Flèche vers la gauche" />
       </div>
-      <img className='active-image' src={imageActuelle} alt="test alt" />
+      <img className='active-image' src={imageActuelle} alt="" />
       <div onClick={nextClick} className="next">
         <img src={nextArrow} alt="Flèche vers la droite" />
       </div>

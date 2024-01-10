@@ -7,7 +7,16 @@
     color: white;
     gap: 2em;
     padding: 3em 0 1em 0;
+    @media (max-width: 767.98px) {
+        gap: 1em;
+        padding: 4em 0 4em 0;
+      }
     p {
         margin: 0;
+        @media (max-width: 767.98px) {
+            width: 40%;
+            font-size: 12px;
+          }
+        text-align: center;
     }
 }

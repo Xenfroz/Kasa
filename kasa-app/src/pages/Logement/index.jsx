@@ -1,6 +1,8 @@
 import { useParams } from 'react-router-dom';
 import logementsListe from '../../datas/logements.json';
 import Carousel from '../../components/Carousel'
+import CollapsingElement from '../../components/CollapsingElement';
+import Rating from '../../components/Rating'
 import './Logement.scss'
 
 const Logement = () => {
@@ -9,6 +11,9 @@ const Logement = () => {
   const lgmt = logementsListe.find(
     (logement) => logement.id === id
   );
+
+  const equipmentItems =  lgmt.equipments.join('<br />')
+  console.log(equipmentItems)
 
   return (
     <div className='logement-wrapper'>
@@ -24,11 +29,17 @@ const Logement = () => {
           </ul>
         </div>
         <div className='owner-rating'>
-          <p>{lgmt.host.name}</p>
-          <img src={lgmt.host.picture} alt={'Photo de profil de '+lgmt.host.name}></img>
+          <div className='host'>
+            <p>{lgmt.host.name}</p>
+            <img src={lgmt.host.picture} alt={'Photo de profil de '+lgmt.host.name}></img>
+          </div>
+          <Rating rating={lgmt.rating}></Rating>
         </div>
       </div>
-      <p>{lgmt.description}</p>
+      <div className='details'>
+        <CollapsingElement titre={'Description'} texte={lgmt.description}></CollapsingElement>
+        <CollapsingElement titre={'Équipements'} texte={equipmentItems}></CollapsingElement>
+      </div>
     </div>
   );
 };
