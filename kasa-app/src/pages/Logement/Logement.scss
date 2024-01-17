@@ -9,77 +9,76 @@
         font-size: 12px;
         padding: 3em 2em;
       }
-}
-
-.info-wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    @media (max-width: 767.98px) {
-        flex-direction: column;
-      }
-    p {
-        margin: 0;
-        font-weight: 500;
-        font-size: 18px;
-    }
-    .lgmt-info {
-        h2 {
-            font-size: 36px;
-            margin: 0;
-            margin-bottom: 0.1em;
-            font-weight: 500;
-        }
-        ul {
-            display: flex;
-            margin: 0;
-            padding: 1.5em 0;
-            list-style-type: none;
-            gap: 1em;
-            
-            li {
-                background-color: #ff6060;
-                color: white;
-                min-width: 5em;
-                text-align: center;
-                justify-content: center;
-                border-radius: 10px;
-                padding: 0.2em 1em;
-            }
-        }
-    }
-    .owner-rating {
+      .info-wrapper {
         display: flex;
-        flex-direction: column;
-        gap: 2em;
-        align-items: flex-end;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
         @media (max-width: 767.98px) {
-            flex-direction: row-reverse;
-            justify-content: space-between;
+            flex-direction: column;
           }
-        .host {
-            display: flex;
-            align-items: center;
-            gap: 1em;
-            img {
-                border-radius: 50%;
-                width: 4em;
+        p {
+            margin: 0;
+            font-weight: 500;
+            font-size: 18px;
+        }
+        .lgmt-info {
+            h2 {
+                font-size: 36px;
+                margin: 0;
+                margin-bottom: 0.1em;
+                font-weight: 500;
+            }
+            ul {
+                display: flex;
+                margin: 0;
+                padding: 1.5em 0;
+                list-style-type: none;
+                gap: 1em;
+                
+                li {
+                    background-color: #ff6060;
+                    color: white;
+                    min-width: 5em;
+                    text-align: center;
+                    justify-content: center;
+                    border-radius: 10px;
+                    padding: 0.2em 1em;
+                }
             }
         }
-        
+        .owner-rating {
+            display: flex;
+            flex-direction: column;
+            gap: 2em;
+            align-items: flex-end;
+            @media (max-width: 767.98px) {
+                flex-direction: row-reverse;
+                justify-content: space-between;
+              }
+            .host {
+                display: flex;
+                align-items: center;
+                gap: 1em;
+                img {
+                    border-radius: 50%;
+                    width: 4em;
+                }
+            }
+            
+        }
+    }
+    .details {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        gap: 6%;
+        overflow: hidden;
+        @media (max-width: 767.98px) {
+            flex-direction: column;
+            gap: 3em;
+          }
     }
 }
 
-.details {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    gap: 6%;
-    overflow: hidden;
-    @media (max-width: 767.98px) {
-        flex-direction: column;
-        gap: 3em;
-      }
-}

@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom';
+import { useParams, Navigate } from 'react-router-dom';
 import logementsListe from '../../datas/logements.json';
 import Carousel from '../../components/Carousel'
 import CollapsingElement from '../../components/CollapsingElement';
@@ -12,8 +12,11 @@ const Logement = () => {
     (logement) => logement.id === id
   );
 
-  const equipmentItems =  lgmt.equipments.join('<br />')
-  console.log(equipmentItems)
+  if (!lgmt) {
+    return <Navigate to="/error" />;
+  }
+
+  const equipmentItems =  lgmt.equipments.join('<br />') //corriger rooting error
 
   return (
     <div className='logement-wrapper'>
