@@ -16,7 +16,7 @@ const Logement = () => {
     return <Navigate to="/error" />;
   }
 
-  const equipmentItems =  lgmt.equipments.join('<br />') //corriger rooting error
+  const equipmentItems =  lgmt.equipments.join('<br />')
 
   return (
     <div className='logement-wrapper'>
