@@ -1,4 +1,5 @@
 .carousel-wrapper {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -14,29 +15,31 @@
 
     .previous {
         position: absolute;
-        left: 11%;
+        left: 5%;
         z-index: 1;
         img {
             @media (max-width: 767.98px) {
                 height: 3em;
-              }
+            }
         }
     }
 
     .next {
         position: absolute;
-        right: 11%;
+        right: 5%;
         z-index: 1;
         img {
             @media (max-width: 767.98px) {
                 height: 3em;
-              }
+            }
         }
     }
 
     .compteur {
         position: absolute;
-        bottom: 22%;
+        bottom: 5%;
+        left: 50%;
+        transform: translateX(-50%);
         z-index: 1;
         margin: 0;
         color: white;
@@ -44,6 +47,6 @@
         font-size: 18px;
         @media (max-width: 767.98px) {
             display: none;
-          }
+        }
     }
 }
