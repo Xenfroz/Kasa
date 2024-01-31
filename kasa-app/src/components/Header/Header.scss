@@ -29,8 +29,12 @@
             text-transform: uppercase;
         }
         
+        &:hover,
+        &:focus {
+            border-bottom-color: #ff6060;
+        }
 
-        &:hover {
+        &.active {
             border-bottom-color: #ff6060;
         }
     }

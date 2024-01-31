@@ -16,8 +16,6 @@ const Logement = () => {
     return <Navigate to="/error" />;
   }
 
-  const equipmentItems =  lgmt.equipments.join('<br />')
-
   return (
     <div className='logement-wrapper'>
       <Carousel imagesGalerie={lgmt.pictures}></Carousel>
@@ -41,7 +39,7 @@ const Logement = () => {
       </div>
       <div className='details'>
         <CollapsingElement titre={'Description'} texte={lgmt.description}></CollapsingElement>
-        <CollapsingElement titre={'Équipements'} texte={equipmentItems}></CollapsingElement>
+        <CollapsingElement titre={'Équipements'} texte={lgmt.equipments}></CollapsingElement>
       </div>
     </div>
   );

@@ -39,7 +39,7 @@
         border-radius: 0 0 5px 5px;
         transition: height 1s;
 
-        p {
+        #text-container {
             
             height: 0;
             font-size: 18px;
@@ -59,7 +59,6 @@
     }
 
     .ce-expanded {
-        // background-color: black;
         height: 100%;
     }
 }
